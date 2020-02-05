@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'login')}">
+<body>
+  <div class="jumbotron text-center">
+    <div class="container">
+      <h1>Bear Link</h1>
+      <p>LOGIN</p>
+
+      <form class="loginform">
+          <br><label>Email Address</label><br>
+          <input type="email" name="loginemail" placeholder="someone@somewhere.com"><br>
+          <br><label>Password</label><br>
+          <input type="password" name="loginpassword" placeholder="********"><br>
+          <br><button>Login</button><br>
+      </form>
+
+      <form class="createaccount">
+          <br><label>First Name</label><br>
+          <input type="text" name="createfn" placeholder="First Name"><br>
+          <br><label>Last Name</label><br>
+          <input type="text" name="createln" placeholder="Last Name"><br>
+          <br><label>Phone Number</label><br>
+          <input type="tel" name="createpn" placeholder="###-###-####"><br>
+          <br><label>Email Address</label><br>
+          <input type="email" name="createemail" placeholder="someone@somewhere.com"><br>
+          <br><label>Password</label><br>
+          <input type="password" name="createpassword" placeholder="********"><br>
+          <br><button>Create New Account</button><br>
+      </form>
+
+    </div>
+  </div>
+
+
+
+<!--
+  <div class="nav">
+      <a href="account.html">ACCOUNT</a>
+      <a href="services.html">SERVICES</a>
+      <a href="locations.html">LOCATIONS</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="franchise.html">FRANCHISE</a>
+      <a href="faq.html">FAQ</a>
+  </div>
+-->
+
+    <p>&copy; 2020 Bear Link</p>
+  </div>
+
+
+</body>
+</html>
+
+
+{% endblock %}
