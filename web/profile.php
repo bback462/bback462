@@ -10,28 +10,12 @@
 <form class="loginform">
     <br><label>User Name</label><br>
     <input type="text" name="displayfn" placeholder="someone"><br>
-
-    <script>
-        function lettersOnly(input){
-          var regex = /[^a-z]/gi;
-          input.value = input.value.replace(regex, "");
-        }
-        </script>
-
     <br><label>First Name</label><br>
-    <input type="text" name="displayfn" placeholder="First Name" onkeyup="lettersOnly(this)"><br>
+    <input type="text" name="displayfn" placeholder="First Name"><br>
     <br><label>Last Name</label><br>
-    <input type="text" name="displayln" placeholder="Last Name" onkeyup="lettersOnly(this)"><br>
-
-    <script>
-        function numbersOnly(input){
-          var regex = /[^0-9,-]/g;
-          input.value = input.value.replace(regex, "");
-        }
-        </script>
-
+    <input type="text" name="displayln" placeholder="Last Name"><br>
     <br><label>Phone Number</label><br>
-    <input type="tel" name="displaypn" placeholder="###-###-####" onkeyup="numbersOnly(this)"><br>
+    <input type="tel" name="displaypn" placeholder="###-###-####"><br>
     <br><label>Email Address</label><br>
     <input type="email" name="displayemail" placeholder="someone@somewhere.com"><br>
 
