@@ -6,17 +6,17 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class BlogController extends AbstractController
 {
-  /*
-    *  @Route("/", name="index")
-     */
+
+      @Route("/", name="index")
+     
     public function index()
     {
         // ...
     }
 
-/*
-  *    @Route("/matches/{slug}", name="matches")
-*/
+
+      @Route("/matches/{slug}", name="matches")
+
     public function show(string $slug)
     {
         // ...
