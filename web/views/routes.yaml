@@ -1,8 +1,8 @@
 # config/routes.yaml
 index:
     path:       /
-    controller: App\Controller\BlogController::index
+    controller: web\views\BlogController.php::index
 
 matches:
     path:       /matches/{slug}
-    controller: App\Controller\BlogController::show
+    controller: web\views\BlogController.php::show
