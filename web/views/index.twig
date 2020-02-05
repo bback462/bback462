@@ -22,8 +22,15 @@
   <a type="button" class="btn btn-lg btn-primary" href="/"><span class="glyphicon glyphicon-home"></span> HOME</a>
   <a type="button" class="btn btn-lg btn-primary" href="/profile"><span class="glyphicon glyphicon-user"></span> PROFILE</a>
 
+  {% for post in blog_posts %}
 
-  <a type="button" class="btn btn-lg btn-primary" href="{{ path('matches')}}"><span class="glyphicon glyphicon-heart"></span> MATCHES</a>
+          <a href="{{ path('matches', {slug: post.slug}) }}">{{ post.title }}</a>
+
+
+      <p>{{ post.excerpt }}</p>
+  {% endfor %}
+
+  <!-- <a type="button" class="btn btn-lg btn-primary" href=""><span class="glyphicon glyphicon-heart"></span> MATCHES</a> -->
 
 
   <a type="button" class="btn btn-lg btn-primary" href="/search"><span class="glyphicon glyphicon-search"></span> SEARCH</a>

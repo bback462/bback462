@@ -1,6 +1,6 @@
 <?php
 
-use web\BlogController.php;
+use web\views\BlogController.php;
 use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
 
 return function (RoutingConfigurator $routes) {
