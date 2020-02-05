@@ -1,15 +1,8 @@
-{% extends "layout.html" %}
-
-{% block content %}
-
+<?php
 <div class="jumbotron text-center">
   <div class="container">
 
-<!--
-    <a href="/" class="lang-logo">
-      <img src="/lang-logo.png">
-    </a>
--->
+require_once("header.html");
   <h1>Bear Link</h1>
   <p>HOME</p>
 
@@ -27,5 +20,5 @@
 
   <p>&copy; 2020 Bear Link</p>
 </div>
-
-{% endblock %}
+require_once("nav.html");
+?>
