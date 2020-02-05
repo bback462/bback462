@@ -47,6 +47,10 @@ $app->get('/faq', function() use($app) {
   return $app['twig']->render('faq.twig');
 });
 
+$app->get('/faq', function ($request, $response, $args) {
+    return $this->view->render($response, 'faq.html.twig');
+});
+
 $app->run();
 
 
