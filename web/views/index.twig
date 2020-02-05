@@ -22,7 +22,7 @@
   <a type="button" class="btn btn-lg btn-primary" href="/"><span class="glyphicon glyphicon-home"></span> HOME</a>
   <a type="button" class="btn btn-lg btn-primary" href="/profile"><span class="glyphicon glyphicon-user"></span> PROFILE</a>
 
-  {% for post in blog_posts %}
+  {% for post in matches %}
 
           <a href="{{ path('matches', {slug: post.slug}) }}">{{ post.title }}</a>
 
