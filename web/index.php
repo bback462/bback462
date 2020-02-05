@@ -19,7 +19,7 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 
 $app->get('/', function() use($app) {
   $app['monolog']->addDebug('logging output.');
-  return $app['twig']->render('home.php');
+  return $app['twig']->render('index.twig');
 });
 
 $app->get('/profile', function() use($app) {
